@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from joblib import load
+from backend import Collection
 
 # Change the standard output encoding to utf-8
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -23,38 +24,16 @@ class NERRequest(BaseModel):
     text: str
     model: str
 
-def extract_features(tokens):
-    features = []
-    for i, token in enumerate(tokens):
-        token_features = {
-            'word': token,
-            'is_digit': token.isdigit(),
-            'prefix1': token[:1],
-            'suffix1': token[-1:],
-            'is_arabic': all('\u0600' <= char <= '\u06FF' for char in token),
-        }
-        if i > 0:
-            token_features['prev_word'] = tokens[i - 1]
-        else:
-            token_features['prev_word'] = '<START>'
-        if i < len(tokens) - 1:
-            token_features['next_word'] = tokens[i + 1]
-        else:
-            token_features['next_word'] = '<END>'
-        features.append(token_features)
-    return features
 
 @app.post("/predict")
 def predict(request: NERRequest):
     text = request.text
     model = request.model
 
-    print(f"Received text: {text}")
-
     if model == "CRF":
         crf_loaded = load('model/crf_model.joblib')
         new_tokens = text.split()
-        new_features = extract_features(new_tokens)
+        new_features = Collection.extract_features(new_tokens)
         predictions = crf_loaded.predict([new_features])
         entities = [
             {"entity": label, "value": token}
