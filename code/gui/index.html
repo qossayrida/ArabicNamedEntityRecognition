@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Entity Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arabic Named Entity Recognition</h1>
+
+        <label for="textInput">Enter Arabic Text:</label>
+        <textarea id="textInput" placeholder="أدخل النص هنا..."></textarea>
+
+        <label for="modelSelect">Select a Model:</label>
+        <select id="modelSelect">
+            <option value="CRF">CRF</option>
+            <option value="RNN">RNN</option>
+            <option value="Transformer">Transformer</option>
+        </select>
+
+        <button id="processButton">Find Entities</button>
+
+        <h2>Results:</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
