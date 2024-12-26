@@ -1,0 +1,33 @@
+التهجير O
+التي O
+سلكها O
+الفلسطينيون B-NORP
+أثناء O
+حرب B-EVENT
+1948 I-EVENT
+( O
+النكبة B-EVENT
+) O
+. O
+
+صورة O
+رئيس B-OCC
+مجلس I-OCC
+محلي I-OCC
+بيرزيت I-OCC
+بطرس B-PERS
+مسلم I-PERS
+عرنكي I-PERS
+( O
+1925 B-DATE
+/ I-DATE
+1937 I-DATE
+) O
+. O
+
+رخصة O
+عمل O
+يوسف B-PERS
+مصطفى I-PERS
+خليل I-PERS
+. O
