@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b73a6c-9237-4439-a5bf-e6aaf1061ba2" name="Changes" comment="">
+    <list default="true" id="4c387c56-76c9-4c7d-a967-300c9a34a87b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jupyter-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assemblage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/assemblage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_cleaned.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_cleaned.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/train.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_cleaned.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/train_cleaned.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/val.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_cleaned.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/val_cleaned.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/gui/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/gui/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/CRF_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/CRF_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/RNN_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/RNN_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/data_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/data_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/temp.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +30,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jupyter Notebook" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2qlHmI8fbem5F9Pfp9WoYfqjYJM" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2qnsoDaFbbFFAA7fWogwsE37kQS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,49 +45,31 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/TESTUSER/Desktop/UniversityCoursesFiles/uniYear4/AI/ArabicNamedEntityRecognition/code/transformers_model.ipynb",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/Documents/ArabicNamedEntityRecognition/code",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Jupyter",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63b73a6c-9237-4439-a5bf-e6aaf1061ba2" name="Changes" comment="" />
-      <created>1735230401980</created>
+      <changelist id="4c387c56-76c9-4c7d-a967-300c9a34a87b" name="Changes" comment="" />
+      <created>1735309846558</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1735230401980</updated>
-      <workItem from="1735230407634" duration="365000" />
-      <workItem from="1735234287934" duration="324000" />
-      <workItem from="1735237388797" duration="633000" />
-      <workItem from="1735240631789" duration="1332000" />
-      <workItem from="1735241997943" duration="150000" />
-      <workItem from="1735242166239" duration="89000" />
-      <workItem from="1735242270687" duration="75000" />
-      <workItem from="1735242520660" duration="8882000" />
-      <workItem from="1735252942125" duration="181000" />
-      <workItem from="1735253148098" duration="374000" />
-      <workItem from="1735253782432" duration="36000" />
-      <workItem from="1735254659766" duration="427000" />
-      <workItem from="1735255104475" duration="235000" />
+      <updated>1735309846558</updated>
+      <workItem from="1735309847623" duration="404000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code$try.coverage" NAME="try Coverage Results" MODIFIED="1735310103004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
