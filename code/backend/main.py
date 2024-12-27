@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from joblib import load
-from backend import Collection
+from backend import assemblage
 
 # Change the standard output encoding to utf-8
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -33,7 +33,7 @@ def predict(request: NERRequest):
     if model == "CRF":
         crf_loaded = load('model/crf_model.joblib')
         new_tokens = text.split()
-        new_features = Collection.extract_features(new_tokens)
+        new_features = assemblage.extract_features(new_tokens)
         predictions = crf_loaded.predict([new_features])
         entities = [
             {"entity": label, "value": token}
