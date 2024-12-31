@@ -4,12 +4,13 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from backend import assemblage
-from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from joblib import load
 import numpy as np
 import warnings
 import json
+import tensorflow as tf
+import pickle
 
 
 # Change the standard output encoding to utf-8
@@ -34,13 +35,13 @@ class NERRequest(BaseModel):
 # Load the saved CRF model
 crf_loaded = load('model/crf_model.joblib')
 
-# Load the saved model, tokenizer, label encoder, and configuration
-model = load_model('model/ner_model.keras')
-tokenizer = load('model/tokenizer.joblib')
-label_encoder = load('model/label_encoder.joblib')
-with open('model/config.json', 'r') as config_file:
-    config = json.load(config_file)
-max_length = config['max_length']
+# Load the model and make predictions
+max_len = 100
+rnn_model = tf.keras.models.load_model("model/arabic_ner_model.h5")
+with open("model/word2idx.pkl", "rb") as file:
+    word2idx = pickle.load(file)
+with open("model/idx2label.pkl", "rb") as file:
+    idx2label = pickle.load(file)
 
 @app.post("/predict")
 def predict(request: NERRequest):
@@ -56,10 +57,14 @@ def predict(request: NERRequest):
             for token, label in zip(new_tokens, predictions[0])
         ]
     elif model == "RNN":
-        result = predict_sentence(text)
+        sample_sentence = text.split()
+        sample_indices = [word2idx.get(word, word2idx["<UNK>"]) for word in sample_sentence]
+        sample_padded = pad_sequences([sample_indices], maxlen=max_len, padding="post")
+        predictions = rnn_model.predict(sample_padded)
+        predicted_tags = [idx2label[np.argmax(tag)] for tag in predictions[0]]
         entities = [
-            {"entity": label, "value": word}
-            for word, label in result
+            {"entity": label, "value": token}
+            for token, label in zip(sample_sentence, predicted_tags)
         ]
     elif model == "Transformer":
         entities = [{"entity": "LOC", "value": "المجدل", "start": 65, "end": 72}]
@@ -69,15 +74,3 @@ def predict(request: NERRequest):
     return {"entities": entities}
 
 
-def predict_sentence(sentence):
-
-    # Tokenize and pad the sentence
-    sequence = tokenizer.texts_to_sequences([sentence])
-    padded_sequence = pad_sequences(sequence, maxlen=max_length, padding='post')
-
-    # Predict the labels
-    predictions = model.predict(padded_sequence)
-    predicted_labels = [label_encoder.inverse_transform([np.argmax(p)])[0] for p in predictions[0]]
-
-    # Return the words and their predicted labels
-    return list(zip(sentence.split(), predicted_labels))
