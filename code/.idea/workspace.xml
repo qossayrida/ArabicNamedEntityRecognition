@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4c387c56-76c9-4c7d-a967-300c9a34a87b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/try.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/try.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter/CRF_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/CRF_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter/RNN_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/RNN_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/crf_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/model/crf_model.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/label_encoder.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/model/label_encoder.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/ner_model.keras" beforeDir="false" afterPath="$PROJECT_DIR$/model/ner_model.keras" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/tokenizer.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/model/tokenizer.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +28,37 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2qnsoDaFbbFFAA7fWogwsE37kQS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code/backend/main.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\model" />
+      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\jupyter" />
       <recent name="C:\Users\user\Documents\ArabicNamedEntityRecognition\code\jupyter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\backend" />
+      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\model" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,6 +92,25 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="server" type="Python.FastAPI">
+      <option name="file" value="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\backend\main.py" />
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\user\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (venv)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="FastAPI.Backend" />
+      <item itemvalue="FastAPI.server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,15 +126,22 @@
       <workItem from="1735312705760" duration="389000" />
       <workItem from="1735633575740" duration="14989000" />
       <workItem from="1735652495495" duration="2000" />
+      <workItem from="1735653303423" duration="8627000" />
+      <workItem from="1735667138900" duration="36000" />
+      <workItem from="1735732439306" duration="12609000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/code$Backend.coverage" NAME="Backend Coverage Results" MODIFIED="1735651987583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/code$Backend.coverage" NAME="Backend Coverage Results" MODIFIED="1735666821359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/code$server.coverage" NAME="server Coverage Results" MODIFIED="1735752939113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/code$main.coverage" NAME="main Coverage Results" MODIFIED="1735635602178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
-    <SUITE FILE_PATH="coverage/code$try.coverage" NAME="try Coverage Results" MODIFIED="1735635505734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/code$try.coverage" NAME="try Coverage Results" MODIFIED="1735759405367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
