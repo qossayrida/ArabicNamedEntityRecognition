@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c387c56-76c9-4c7d-a967-300c9a34a87b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/try.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/try.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter/transformers_model.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code/model",
+    "last_opened_file_path": "D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,7 +59,7 @@
       <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="FastAPI.Backend">
     <configuration name="Backend" type="Python.FastAPI">
       <option name="file" value="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\backend\main.py" />
       <module name="code" />
@@ -129,6 +127,7 @@
       <workItem from="1735653303423" duration="8627000" />
       <workItem from="1735667138900" duration="36000" />
       <workItem from="1735732439306" duration="12609000" />
+      <workItem from="1735938152946" duration="381000" />
     </task>
     <servers />
   </component>
