@@ -8,7 +8,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from joblib import load
 import numpy as np
 import warnings
-import json
 import tensorflow as tf
 import pickle
 
@@ -50,7 +49,7 @@ def predict(request: NERRequest):
 
     if model == "CRF":
         new_tokens = text.split()
-        new_features = assemblage.extract_features(new_tokens)
+        new_features = assemblage.extract_features_for_crf(new_tokens)
         predictions = crf_loaded.predict([new_features])
         entities = [
             {"entity": label, "value": token}
@@ -66,7 +65,9 @@ def predict(request: NERRequest):
             {"entity": label, "value": token}
             for token, label in zip(sample_sentence, predicted_tags)
         ]
-    elif model == "Transformer":
+    elif model == "DT":
+        entities = [{"entity": "LOC", "value": "المجدل", "start": 65, "end": 72}]
+    elif model == "NB":
         entities = [{"entity": "LOC", "value": "المجدل", "start": 65, "end": 72}]
     else:
         entities = [{"entity": "MON", "value": "500", "start": 15, "end": 18}]

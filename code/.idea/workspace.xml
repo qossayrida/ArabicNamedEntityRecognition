@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c387c56-76c9-4c7d-a967-300c9a34a87b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jupyter/decision_tree_model.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jupyter/naive_bayes_model.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/decision_tree_ner_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/decision_tree_vectorizer.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/naive_bayes_ner_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/naive_bayes_vectorizer.joblib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assemblage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/assemblage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter/crf_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/crf_model.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code",
+    "last_opened_file_path": "D:/University/Year 4 semester 1/ENCS3340/ArabicNamedEntityRecognition/code/jupyter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,8 +60,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\model" />
       <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\jupyter" />
+      <recent name="D:\University\Year 4 semester 1\ENCS3340\ArabicNamedEntityRecognition\code\model" />
       <recent name="C:\Users\user\Documents\ArabicNamedEntityRecognition\code\jupyter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -127,7 +137,8 @@
       <workItem from="1735653303423" duration="8627000" />
       <workItem from="1735667138900" duration="36000" />
       <workItem from="1735732439306" duration="12609000" />
-      <workItem from="1735938152946" duration="381000" />
+      <workItem from="1735938152946" duration="809000" />
+      <workItem from="1735997766735" duration="3643000" />
     </task>
     <servers />
   </component>

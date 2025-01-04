@@ -1,3 +1,4 @@
+import re
 def load_data(file):
     data = []  # To store (sentence, labels) tuples
     sentence = []
@@ -26,7 +27,7 @@ def load_data(file):
 
     return data
 
-def extract_features(tokens):
+def extract_features_for_crf(tokens):
     features = []
     for i, token in enumerate(tokens):
         token_features = {
@@ -46,5 +47,26 @@ def extract_features(tokens):
             token_features['next_word'] = '<END>'
         features.append(token_features)
     return features
+
+
+def extract_features_for_DT_NB(sentence, idx):
+    word = sentence[idx]
+    features = {
+        "word": word,
+        "is_first": idx == 0,
+        "is_last": idx == len(sentence) - 1,
+        "prefix-1": word[:1],
+        "prefix-2": word[:2],
+        "prefix-3": word[:3],
+        "suffix-1": word[-1:],
+        "suffix-2": word[-2:],
+        "suffix-3": word[-3:],
+        "is_numeric": word.isdigit(),
+        "contains_digit": any(char.isdigit() for char in word),
+        "word_shape": re.sub(r"[\u0621-\u064A]", "X", re.sub(r"\d", "d", word)),
+    }
+    return features
+
+
 
 
