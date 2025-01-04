@@ -42,6 +42,12 @@ with open("model/word2idx.pkl", "rb") as file:
 with open("model/idx2label.pkl", "rb") as file:
     idx2label = pickle.load(file)
 
+decision_tree_model = load("model/decision_tree_ner_model.joblib")
+decision_tree_vectorizer = load("model/decision_tree_vectorizer.joblib")
+
+naive_bayes_model = load("model/naive_bayes_ner_model.joblib")
+naive_bayes_vectorizer = load("model/naive_bayes_vectorizer.joblib")
+
 @app.post("/predict")
 def predict(request: NERRequest):
     text = request.text
@@ -66,12 +72,29 @@ def predict(request: NERRequest):
             for token, label in zip(sample_sentence, predicted_tags)
         ]
     elif model == "DT":
-        entities = [{"entity": "LOC", "value": "المجدل", "start": 65, "end": 72}]
+        predictions = predict_entities(text, decision_tree_model, decision_tree_vectorizer)
+
+        entities = [
+            {"entity": label, "value": token}
+            for token, label in predictions
+        ]
     elif model == "NB":
-        entities = [{"entity": "LOC", "value": "المجدل", "start": 65, "end": 72}]
+        predictions = predict_entities(text, naive_bayes_model, naive_bayes_vectorizer)
+
+        entities = [
+            {"entity": label, "value": token}
+            for token, label in predictions
+        ]
     else:
         entities = [{"entity": "MON", "value": "500", "start": 15, "end": 18}]
 
     return {"entities": entities}
 
 
+# Test the model on a new sentence
+def predict_entities(sentence, clf, vectorizer):
+    tokens = sentence.split()
+    features = [assemblage.extract_features_for_DT_NB(tokens, idx) for idx in range(len(tokens))]
+    features_vectorized = vectorizer.transform(features)
+    predictions = clf.predict(features_vectorized)
+    return list(zip(tokens, predictions))
