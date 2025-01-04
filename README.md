@@ -20,7 +20,7 @@ The dataset from Wojood has been adapted to identify the following named entitie
 ### Excluded Entities
 Entities such as `WEBSITE`, `OCC` (occupation), `FAC` (facilities), `PRODUCT`, `LAW`, `UNIT`, and `ORDINAL` are excluded from this system.
 
----
+
 
 ## Repository Structure
 
@@ -47,7 +47,7 @@ The repository is organized into the following directories:
   - `naive_bayes_model.ipynb`: Naive Bayes-based approach for NER.
   - `rnn_model.ipynb`: RNN-based deep learning model for NER.
 
----
+
 
 ## How to Use
 
@@ -56,7 +56,7 @@ The repository is organized into the following directories:
 3. **Run Backend**: Execute the backend scripts in the `backend` directory to process data and integrate models.
 4. **GUI**: Use the files in the `gui` directory to interact with the system via a web interface.
 
----
+
 
 ## Key Features
 
@@ -64,7 +64,7 @@ The repository is organized into the following directories:
 - Handles Arabic text with preprocessing and normalization.
 - Custom entity mapping for tailored recognition tasks.
 
----
+
 
 ## Requirements
 
@@ -74,7 +74,7 @@ The repository is organized into the following directories:
 - Flask or a similar framework for backend processing
 - Standard web technologies (HTML, CSS, JavaScript) for the GUI
 
----
+
 
 ## Sample Run
 
@@ -84,7 +84,7 @@ Here is a sample run of the Arabic NER system:
   <img src="https://github.com/user-attachments/assets/b5a68d88-27a0-4bec-8fb8-0b579b4fc2e6" alt="Sample Run" width="600">
 </p>
 
----
+
 
 
 ## Acknowledgments
